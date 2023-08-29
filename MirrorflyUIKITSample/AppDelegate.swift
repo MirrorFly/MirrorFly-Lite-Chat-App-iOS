@@ -13,7 +13,7 @@ import FlyUIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
-    let licenseKey = "ckIjaccWBoMNvxdbql8LJ2dmKqT5bp" //"YOUR_LICENSE_KEY"
+    let licenseKey = "" //"YOUR_LICENSE_KEY"
     
     var notificationView: MFUICustomNotificationView?
     var player: AVAudioPlayer?

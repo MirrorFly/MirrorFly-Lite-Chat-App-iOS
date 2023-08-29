@@ -10,7 +10,7 @@ import FlyUIKit
 
 class ViewController: UIViewController {
 
-    var userID = "917904792568" //Your User ID
+    var userID = "" //Your User ID
    
     
     override func viewDidLoad() {
