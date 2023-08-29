@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MirrorflyUIKIT2.0
+//  MirrorflyUIKITSample
 //
-//  Created by Ramakrishnan on 21/08/23.
+//  Created by Ramakrishnan on 29/08/23.
 //
 
 import UIKit
@@ -13,7 +13,7 @@ import FlyUIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
-    let licenseKey = "" //"YOUR_LICENSE_KEY"
+    let licenseKey = "ckIjaccWBoMNvxdbql8LJ2dmKqT5bp" //"YOUR_LICENSE_KEY"
     
     var notificationView: MFUICustomNotificationView?
     var player: AVAudioPlayer?

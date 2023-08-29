@@ -1,18 +1,16 @@
 //
 //  ViewController.swift
-//  MirrorflyUIKIT2.0
+//  MirrorflyUIKITSample
 //
-//  Created by Ramakrishnan on 21/08/23.
+//  Created by Ramakrishnan on 29/08/23.
 //
 
 import UIKit
 import FlyUIKit
 
-
-
 class ViewController: UIViewController {
 
-    var userID = "" //Your User ID
+    var userID = "917904792568" //Your User ID
    
     
     override func viewDidLoad() {
@@ -20,9 +18,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func initializeSdk(_ sender: Any) {
-      initialize()
+    @IBAction func initialize(_ sender: Any) {
+        initialize()
     }
+   
     
     
     func initialize () {
@@ -41,6 +40,7 @@ class ViewController: UIViewController {
     func getRecentChat() {
         let recentChatListViewController = MFUIRecentChatListViewController()
         recentChatListViewController.isInitialLoading = true
+        recentChatListViewController.showCreateOptionOf(chat: true, group: true, setting: false)
         self.navigationController?.pushViewController(recentChatListViewController, animated: true)
     }
     

@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  MirrorflyUIKIT2.0
+//  MirrorflyUIKITSample
 //
-//  Created by Ramakrishnan on 21/08/23.
+//  Created by Ramakrishnan on 29/08/23.
 //
 
 import UIKit

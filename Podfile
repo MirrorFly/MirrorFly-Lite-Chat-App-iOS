@@ -1,17 +1,13 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'MirrorflyUIKIT2.0' do
+target 'MirrorflyUIKITSample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for MirrorflyUIKIT2.0
+  # Pods for MirrorflyUIKITSample
 
-  #pod 'MirrorflyUIKit', '2.1.9'
- # pod 'MirrorflyUIKit', :git => 'https://github.com/MirrorFly/Mirrorfly-iosuikit-framework.git', :tag => '3.0.2'
-#  pod 'MirrorflyUIKit', '3.0.2'
 pod 'MirrorflyUIKit', :git => 'https://github.com/MirrorFly/Mirrorfly-iosuikit-framework.git', :branch => 'feature/call-disable'
-
 
 end
 
