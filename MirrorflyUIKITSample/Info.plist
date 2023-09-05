@@ -23,5 +23,19 @@
 	</dict>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Allow Mirrorfly-UIKIT to access photos </string>
+	<key>NSCameraUsageDescription</key>
+	<string>Allow Mirrorfly-UIKIT to access  Camera</string>
+	<key>NSDocumentsFolderUsageDescription</key>
+	<string>Allow Mirrorfly-UIKIT to access Document</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Allow Mirrorfly-UIKIT to access Microphone</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Allow Mirrorfly-UIKIT to access Media</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Allow Mirrorfly-UIKIT to access Location</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Allow Mirrorfly-UIKIT to access Contact</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Allow Mirrorfly-UIKIT to access Location</string>
 </dict>
 </plist>

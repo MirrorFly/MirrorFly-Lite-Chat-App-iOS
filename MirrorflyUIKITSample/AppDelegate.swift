@@ -13,7 +13,7 @@ import FlyUIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
-    let licenseKey = "" //"YOUR_LICENSE_KEY"
+    let licenseKey =  "XXXXXXXXXXXXXXXXX"  //"YOUR_LICENSE_KEY"
     
     var notificationView: MFUICustomNotificationView?
     var player: AVAudioPlayer?
@@ -32,6 +32,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                // FlyDefaults.licenseKey = licenseKey
             }else{
                 print(error,"AppdelegateFailed")
+            }
+        }
+        
+        FlyUIKitSDK.shared.didLogout {
+            print("#logout didLogout")
+            if #available(iOS 13.0, *) {
+                self.logout()
             }
         }
 
@@ -312,4 +319,12 @@ func navigateToChatScreen(chatId : String, message : ChatMessage,completionHandl
     }
 
 }
+    
+    func logout() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        UIApplication.shared.keyWindow?.rootViewController =  UINavigationController(rootViewController: initialViewController)
+        UIApplication.shared.keyWindow?.makeKeyAndVisible()
+    }
+    
 }
