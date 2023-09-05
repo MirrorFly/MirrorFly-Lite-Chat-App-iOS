@@ -1,0 +1,139 @@
+PODS:
+  - Alamofire (5.5.0)
+  - CocoaAsyncSocket (7.6.5)
+  - CocoaLumberjack (3.6.2):
+    - CocoaLumberjack/Core (= 3.6.2)
+  - CocoaLumberjack/Core (3.6.2)
+  - CocoaLumberjack/Swift (3.6.2):
+    - CocoaLumberjack/Core
+  - Floaty (4.2.0)
+  - GoogleMaps (6.2.1):
+    - GoogleMaps/Maps (= 6.2.1)
+  - GoogleMaps/Base (6.2.1)
+  - GoogleMaps/Maps (6.2.1):
+    - GoogleMaps/Base
+  - GoogleWebRTC (1.1.32000)
+  - IQKeyboardManagerSwift (6.5.12)
+  - KissXML (5.3.1):
+    - KissXML/All (= 5.3.1)
+  - KissXML/Additions (5.3.1):
+    - KissXML/Core
+  - KissXML/All (5.3.1):
+    - KissXML/Additions
+    - KissXML/Core
+  - KissXML/Core (5.3.1)
+  - libidn (1.35)
+  - libPhoneNumber-iOS (0.9.15)
+  - MirrorFlySDK (5.10.6):
+    - Alamofire (= 5.5.0)
+    - CocoaLumberjack (= 3.6.2)
+    - GoogleWebRTC
+    - libPhoneNumber-iOS (= 0.9.15)
+    - RealmSwift (= 10.20.1)
+    - Socket.IO-Client-Swift (= 15.2.0)
+    - SocketRocket (= 0.6.0)
+    - XMPPFramework/Swift (= 4.0.0)
+  - MirrorflyUIKit (3.0.2):
+    - Alamofire
+    - Floaty (~> 4.2.0)
+    - GoogleMaps
+    - GoogleWebRTC
+    - IQKeyboardManagerSwift
+    - libPhoneNumber-iOS
+    - MirrorFlySDK (= 5.10.6)
+    - NicoProgress
+    - RealmSwift (= 10.20.1)
+    - SDWebImage
+    - Socket.IO-Client-Swift (= 15.2.0)
+    - SocketRocket
+    - SwiftLinkPreview
+    - Toaster
+    - XMPPFramework/Swift
+  - NicoProgress (0.4.0)
+  - Realm (10.20.1):
+    - Realm/Headers (= 10.20.1)
+  - Realm/Headers (10.20.1)
+  - RealmSwift (10.20.1):
+    - Realm (= 10.20.1)
+  - SDWebImage (5.17.0):
+    - SDWebImage/Core (= 5.17.0)
+  - SDWebImage/Core (5.17.0)
+  - Socket.IO-Client-Swift (15.2.0):
+    - Starscream (~> 3.1)
+  - SocketRocket (0.6.0)
+  - Starscream (3.1.1)
+  - SwiftLinkPreview (3.4.0)
+  - Toaster (2.3.0)
+  - XMPPFramework/default (4.0.0):
+    - CocoaAsyncSocket (~> 7.6)
+    - CocoaLumberjack
+    - KissXML (~> 5.2)
+    - libidn (~> 1.35)
+  - XMPPFramework/Swift (4.0.0):
+    - CocoaLumberjack/Swift
+    - XMPPFramework/default
+
+DEPENDENCIES:
+  - MirrorflyUIKit (from `https://github.com/MirrorFly/Mirrorfly-iosuikit-framework.git`, branch `feature/call-disable`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+    - Floaty
+    - GoogleMaps
+    - GoogleWebRTC
+    - IQKeyboardManagerSwift
+    - KissXML
+    - libidn
+    - libPhoneNumber-iOS
+    - MirrorFlySDK
+    - NicoProgress
+    - Realm
+    - RealmSwift
+    - SDWebImage
+    - Socket.IO-Client-Swift
+    - SocketRocket
+    - Starscream
+    - SwiftLinkPreview
+    - Toaster
+    - XMPPFramework
+
+EXTERNAL SOURCES:
+  MirrorflyUIKit:
+    :branch: feature/call-disable
+    :git: https://github.com/MirrorFly/Mirrorfly-iosuikit-framework.git
+
+CHECKOUT OPTIONS:
+  MirrorflyUIKit:
+    :commit: 7d4b6b4a959b9cb68db69895279115e08c7d9fe3
+    :git: https://github.com/MirrorFly/Mirrorfly-iosuikit-framework.git
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
+  Floaty: e2bd5a0f6f7f70899e26ff2da31081c8bee8d1b0
+  GoogleMaps: 20d7b12be49a14287f797e88e0e31bc4156aaeb4
+  GoogleWebRTC: 4d261187b30512efdb711d21fa961a6adf138717
+  IQKeyboardManagerSwift: 371b08cb39664fb56030f5345c815a4ffc74bbc0
+  KissXML: 5c8e0f2e8b9f071d3e1ae123dec3eb5da615c10c
+  libidn: e4576a956b797c584c77aaedfc6e3dd639b61bdc
+  libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
+  MirrorFlySDK: 855f86929d7c0dd2ccc76dead06347af3035dd79
+  MirrorflyUIKit: f9dd0e03b596679905db55b72dbcb88649fb7312
+  NicoProgress: 8e26d401623a1ba9456748b04b30183d5e212d25
+  Realm: fac5ecd031fcb81171627b74944c885662d4b266
+  RealmSwift: 9b02d25acb46a14756bde9893abb99e2e3675923
+  SDWebImage: 750adf017a315a280c60fde706ab1e552a3ae4e9
+  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
+  SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  SwiftLinkPreview: c1bc5b2cb3cd42f2865137c1a61f5d788dcf5c9c
+  Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
+  XMPPFramework: 5d31ff9f73dce031b24bc49bcf88093627a3a86e
+
+PODFILE CHECKSUM: e27c2ec13054c5d5971f5543fff681165d13f427
+
+COCOAPODS: 1.12.0
