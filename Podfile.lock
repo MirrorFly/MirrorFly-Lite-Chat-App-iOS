@@ -33,7 +33,7 @@ PODS:
     - Socket.IO-Client-Swift (= 15.2.0)
     - SocketRocket (= 0.6.0)
     - XMPPFramework/Swift (= 4.0.0)
-  - MirrorflyUIKit (3.0.2):
+  - MirrorflyUIKit (3.0.4):
     - Alamofire
     - Floaty (~> 4.2.0)
     - GoogleMaps
@@ -55,9 +55,9 @@ PODS:
   - Realm/Headers (10.20.1)
   - RealmSwift (10.20.1):
     - Realm (= 10.20.1)
-  - SDWebImage (5.17.0):
-    - SDWebImage/Core (= 5.17.0)
-  - SDWebImage/Core (5.17.0)
+  - SDWebImage (5.18.0):
+    - SDWebImage/Core (= 5.18.0)
+  - SDWebImage/Core (5.18.0)
   - Socket.IO-Client-Swift (15.2.0):
     - Starscream (~> 3.1)
   - SocketRocket (0.6.0)
@@ -74,7 +74,7 @@ PODS:
     - XMPPFramework/default
 
 DEPENDENCIES:
-  - MirrorflyUIKit (from `https://github.com/MirrorFly/Mirrorfly-iosuikit-framework.git`, branch `feature/call-disable`)
+  - MirrorflyUIKit (= 3.0.4)
 
 SPEC REPOS:
   trunk:
@@ -89,6 +89,7 @@ SPEC REPOS:
     - libidn
     - libPhoneNumber-iOS
     - MirrorFlySDK
+    - MirrorflyUIKit
     - NicoProgress
     - Realm
     - RealmSwift
@@ -99,16 +100,6 @@ SPEC REPOS:
     - SwiftLinkPreview
     - Toaster
     - XMPPFramework
-
-EXTERNAL SOURCES:
-  MirrorflyUIKit:
-    :branch: feature/call-disable
-    :git: https://github.com/MirrorFly/Mirrorfly-iosuikit-framework.git
-
-CHECKOUT OPTIONS:
-  MirrorflyUIKit:
-    :commit: 7d4b6b4a959b9cb68db69895279115e08c7d9fe3
-    :git: https://github.com/MirrorFly/Mirrorfly-iosuikit-framework.git
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
@@ -122,11 +113,11 @@ SPEC CHECKSUMS:
   libidn: e4576a956b797c584c77aaedfc6e3dd639b61bdc
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
   MirrorFlySDK: 855f86929d7c0dd2ccc76dead06347af3035dd79
-  MirrorflyUIKit: f9dd0e03b596679905db55b72dbcb88649fb7312
+  MirrorflyUIKit: c0fbda9e749d8a394b7c5151f45590a20e287702
   NicoProgress: 8e26d401623a1ba9456748b04b30183d5e212d25
   Realm: fac5ecd031fcb81171627b74944c885662d4b266
   RealmSwift: 9b02d25acb46a14756bde9893abb99e2e3675923
-  SDWebImage: 750adf017a315a280c60fde706ab1e552a3ae4e9
+  SDWebImage: 182830bcddc30cde95fbc60dfe4badc3553d94ba
   Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
@@ -134,6 +125,6 @@ SPEC CHECKSUMS:
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
   XMPPFramework: 5d31ff9f73dce031b24bc49bcf88093627a3a86e
 
-PODFILE CHECKSUM: e27c2ec13054c5d5971f5543fff681165d13f427
+PODFILE CHECKSUM: d0fa4ef8e7bda5fc6eca6ef2781f62f537a56624
 
 COCOAPODS: 1.12.0

@@ -7,8 +7,8 @@ target 'MirrorflyUIKITSample' do
 
   # Pods for MirrorflyUIKITSample
 
-pod 'MirrorflyUIKit', :git => 'https://github.com/MirrorFly/Mirrorfly-iosuikit-framework.git', :branch => 'feature/call-disable'
-
+ 
+pod 'MirrorflyUIKit', '3.0.4'
 end
 
 post_install do |installer|

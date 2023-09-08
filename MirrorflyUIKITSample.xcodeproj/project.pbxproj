@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B8E92E11BEF1A3892A3D63E /* Pods_MirrorflyUIKITSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D2545071DE493C2CBD6C1D /* Pods_MirrorflyUIKITSample.framework */; };
+		6A92F65C088C4AD0D2DFB443 /* Pods_MirrorflyUIKITSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13468546E459968FEFF965DD /* Pods_MirrorflyUIKITSample.framework */; };
 		CEB2F15E2A9E107B0027B882 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2F15D2A9E107B0027B882 /* AppDelegate.swift */; };
 		CEB2F1602A9E107B0027B882 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2F15F2A9E107B0027B882 /* SceneDelegate.swift */; };
 		CEB2F1622A9E107B0027B882 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB2F1612A9E107B0027B882 /* ViewController.swift */; };
@@ -17,9 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		27D2545071DE493C2CBD6C1D /* Pods_MirrorflyUIKITSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MirrorflyUIKITSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		708A6B3029BEA31C0C9AEA8B /* Pods-MirrorflyUIKITSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorflyUIKITSample.release.xcconfig"; path = "Target Support Files/Pods-MirrorflyUIKITSample/Pods-MirrorflyUIKITSample.release.xcconfig"; sourceTree = "<group>"; };
-		83F23E0FDF3BC8BDF7FE81D1 /* Pods-MirrorflyUIKITSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorflyUIKITSample.debug.xcconfig"; path = "Target Support Files/Pods-MirrorflyUIKITSample/Pods-MirrorflyUIKITSample.debug.xcconfig"; sourceTree = "<group>"; };
+		0E94770C72397E09C0755BF4 /* Pods-MirrorflyUIKITSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorflyUIKITSample.debug.xcconfig"; path = "Target Support Files/Pods-MirrorflyUIKITSample/Pods-MirrorflyUIKITSample.debug.xcconfig"; sourceTree = "<group>"; };
+		13468546E459968FEFF965DD /* Pods_MirrorflyUIKITSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MirrorflyUIKITSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB2F15A2A9E107B0027B882 /* MirrorflyUIKITSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MirrorflyUIKITSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB2F15D2A9E107B0027B882 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB2F15F2A9E107B0027B882 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +27,7 @@
 		CEB2F1662A9E107E0027B882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB2F1692A9E107E0027B882 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB2F16B2A9E107E0027B882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D29F3D801D3A7331319FD928 /* Pods-MirrorflyUIKITSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorflyUIKITSample.release.xcconfig"; path = "Target Support Files/Pods-MirrorflyUIKITSample/Pods-MirrorflyUIKITSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,27 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B8E92E11BEF1A3892A3D63E /* Pods_MirrorflyUIKITSample.framework in Frameworks */,
+				6A92F65C088C4AD0D2DFB443 /* Pods_MirrorflyUIKITSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8C79104C2B703ED21725BEEA /* Pods */ = {
+		25D411A63AF54BD17AD7AB80 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				83F23E0FDF3BC8BDF7FE81D1 /* Pods-MirrorflyUIKITSample.debug.xcconfig */,
-				708A6B3029BEA31C0C9AEA8B /* Pods-MirrorflyUIKITSample.release.xcconfig */,
+				0E94770C72397E09C0755BF4 /* Pods-MirrorflyUIKITSample.debug.xcconfig */,
+				D29F3D801D3A7331319FD928 /* Pods-MirrorflyUIKITSample.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		AA31BCFE9828B7C4D0B19F68 /* Frameworks */ = {
+		836B1E91BBE6072BEFACAF10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				27D2545071DE493C2CBD6C1D /* Pods_MirrorflyUIKITSample.framework */,
+				13468546E459968FEFF965DD /* Pods_MirrorflyUIKITSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -65,8 +65,8 @@
 			children = (
 				CEB2F15C2A9E107B0027B882 /* MirrorflyUIKITSample */,
 				CEB2F15B2A9E107B0027B882 /* Products */,
-				8C79104C2B703ED21725BEEA /* Pods */,
-				AA31BCFE9828B7C4D0B19F68 /* Frameworks */,
+				25D411A63AF54BD17AD7AB80 /* Pods */,
+				836B1E91BBE6072BEFACAF10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +99,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEB2F16E2A9E107E0027B882 /* Build configuration list for PBXNativeTarget "MirrorflyUIKITSample" */;
 			buildPhases = (
-				C7AC9FB7030CBA107E471373 /* [CP] Check Pods Manifest.lock */,
+				F31DC4F285B03DB5BEB53C83 /* [CP] Check Pods Manifest.lock */,
 				CEB2F1562A9E107B0027B882 /* Sources */,
 				CEB2F1572A9E107B0027B882 /* Frameworks */,
 				CEB2F1582A9E107B0027B882 /* Resources */,
-				45B81BDA96BD87FDEF7E26DE /* [CP] Embed Pods Frameworks */,
-				1059C3088D903FE063CE6627 /* [CP] Copy Pods Resources */,
+				5081C3363E6A73E40DCF4ED3 /* [CP] Embed Pods Frameworks */,
+				2255757D6828C8984AA025FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,7 +162,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1059C3088D903FE063CE6627 /* [CP] Copy Pods Resources */ = {
+		2255757D6828C8984AA025FF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -179,7 +179,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MirrorflyUIKITSample/Pods-MirrorflyUIKITSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		45B81BDA96BD87FDEF7E26DE /* [CP] Embed Pods Frameworks */ = {
+		5081C3363E6A73E40DCF4ED3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -196,7 +196,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MirrorflyUIKITSample/Pods-MirrorflyUIKITSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C7AC9FB7030CBA107E471373 /* [CP] Check Pods Manifest.lock */ = {
+		F31DC4F285B03DB5BEB53C83 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -369,7 +369,7 @@
 		};
 		CEB2F16F2A9E107E0027B882 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83F23E0FDF3BC8BDF7FE81D1 /* Pods-MirrorflyUIKITSample.debug.xcconfig */;
+			baseConfigurationReference = 0E94770C72397E09C0755BF4 /* Pods-MirrorflyUIKITSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -399,7 +399,7 @@
 		};
 		CEB2F1702A9E107E0027B882 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 708A6B3029BEA31C0C9AEA8B /* Pods-MirrorflyUIKITSample.release.xcconfig */;
+			baseConfigurationReference = D29F3D801D3A7331319FD928 /* Pods-MirrorflyUIKITSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
