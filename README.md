@@ -17,7 +17,7 @@ Step 3: From the MirrorFly console Overview Page you can find your unique Licens
 
 ## License Key Configuration
 
-The integration process just involves the license key configuration in the AppDelegate method, that’s it.  Now you can able to buid & run the demo app at ease. 
+The integration process just involves the license key configuration in the AppDelegate method, that’s it.  Now you can able to build & run the demo app at ease. 
 
 #### License Key Example:
 ```swift
