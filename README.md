@@ -27,4 +27,12 @@ ChatManager.initializeSDK(licenseKey: licenseKey) { isSuccess, error, data in
 
 }
 ```
-Great. You're now ready to utilize the essential chat features of our Mirrorfly SDK within your application and run it to experience seamless communications.  
+Great. You're now ready to utilize the essential chat features of our Mirrorfly SDK within your application. Now you need to run your app and follow the below steps to initiate chat.
+
+Step 1: Create 2 users with user ID. To send and receive messages between them.
+
+Step 2: Initiate chat, choose a single or group chat,
+
+Step 3: Pick a user from the contact (from the registered user list) and start the conversations.
+
+That is it! It is as simple as it is defined above. Start experiencing MirrorFly’s Lite Chat App for iOS.
