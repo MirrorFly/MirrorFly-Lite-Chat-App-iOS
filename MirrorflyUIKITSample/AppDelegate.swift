@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var notificationView: MFUICustomNotificationView?
     var player: AVAudioPlayer?
-
+    var validLicensekey = false 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

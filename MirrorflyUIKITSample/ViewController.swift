@@ -20,7 +20,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
    
    
     let ACCEPTABLE_CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-   
+    var appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var openChatButton: UIButton!
     @IBOutlet weak var initLabel: UILabel!
@@ -93,12 +94,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
 
         else {
-            phoneNumberTextField.resignFirstResponder()
-            self.activityIndicator.isHidden = false
-            self.activityIndicator.startAnimating()
-            self.openChatButton.isHidden = true
-            self.initLabel.isHidden = false
-            self.initialize()
+            if appDelegate.validLicensekey {
+                phoneNumberTextField.resignFirstResponder()
+                self.activityIndicator.isHidden = false
+                self.activityIndicator.startAnimating()
+                self.openChatButton.isHidden = true
+                self.initLabel.isHidden = false
+                self.initialize()
+                
+            } else {
+                Toast(text: "Please Enter Valid LicenseKey").show()
+                self.activityIndicator.isHidden = true
+                self.openChatButton.isHidden = false
+                self.initLabel.isHidden = true
+                phoneNumberTextField.resignFirstResponder()
+                
+            }
            
         }
     }
