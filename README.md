@@ -1,4 +1,4 @@
-# MirrorFly Lite Chat App for iOS
+# MirrorFly Lite Chat SDK App for iOS
 
 MirrorFly Lite Chat App is your new go-to solution for seamless, efficient, and effortless communication.This Lite Chat App, built with our prebuilt UIKit, and ready-made user interface elements that can be seamlessly incorporated for quick chat application development.
 
