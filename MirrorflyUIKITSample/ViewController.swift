@@ -103,7 +103,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 self.initialize()
                 
             } else {
-                Toast(text: "Please Enter Valid LicenseKey").show()
+                Toast(text: " Invalid LicenseKey").show()
                 self.activityIndicator.isHidden = true
                 self.openChatButton.isHidden = false
                 self.initLabel.isHidden = true

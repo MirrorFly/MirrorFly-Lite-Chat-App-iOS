@@ -13,7 +13,7 @@ import FlyUIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
-    let licenseKey =  "XXXXXXXXXXXXXXXX"  //"YOUR_LICENSE_KEY"
+    let licenseKey =  "XXXXXXXXXXXXXXXX"   //"YOUR_LICENSE_KEY"
     
     var notificationView: MFUICustomNotificationView?
     var player: AVAudioPlayer?
@@ -29,9 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if isSuccess{
                 print("Success")
                 ChatManager.shared.localNotificationDelegate = self
-               // FlyDefaults.licenseKey = licenseKey
+                self.validLicensekey =  true
             }else{
                 print(error,"AppdelegateFailed")
+                self.validLicensekey = false
             }
         }
         
