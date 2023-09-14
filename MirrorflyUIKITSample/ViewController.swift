@@ -34,7 +34,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         activityIndicator.isHidden = true
         self.phoneNumberTextField.delegate = self
         self.phoneNumberTextField.keyboardType = .default
-        if UserDefaults.standard.isLoggedIn() {
+        if FlyDefaults.isLoggedIn {
             phoneNumberTextField.text = UserDefaults.standard.getUserID()
             phoneNumberTextField.isUserInteractionEnabled = false
             initialize()
