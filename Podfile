@@ -8,7 +8,7 @@ target 'MirrorflyUIKITSample' do
   # Pods for MirrorflyUIKITSample
 
  
-pod 'MirrorflyUIKit', '3.0.4'
+pod 'MirrorflyUIKit', '3.0.5'
 end
 
 post_install do |installer|

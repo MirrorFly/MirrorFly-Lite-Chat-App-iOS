@@ -11,14 +11,13 @@ import FlyUIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     
-    let licenseKey =  "XXXXXXXXXXXXXXXX"   //"YOUR_LICENSE_KEY"
+    let licenseKey =  "fBSGlLSjOZXsrAuaqaHPqeO9f0J4JU"   //"YOUR_LICENSE_KEY"
     
     var notificationView: MFUICustomNotificationView?
     var player: AVAudioPlayer?
-    var validLicensekey = false 
-
+    var validLicensekey = false
+    let isHideNotificationContent = false
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -35,6 +34,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self.validLicensekey = false
             }
         }
+        
+        FlyUIKitConstants.hideNotificationContent = false
+        ChatManager.hideNotificationContent(hide: FlyUIKitConstants.hideNotificationContent)
+
         
         FlyUIKitSDK.shared.didLogout {
             print("#logout didLogout")
@@ -67,19 +70,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
  @available(iOS 13.0, *)
 extension AppDelegate : LocalNotificationDelegate{
+  
     func showOrUpdateOrCancelNotification(jid: String, chatMessage: ChatMessage, groupId: String) {
+        
+        let myJid = try? FlyUtils.getMyJid()
         
         print("#notification \(chatMessage.chatUserJid) \(groupId) \(chatMessage.senderUserJid)")
         let current = UIApplication.shared.keyWindow?.getTopViewController()
-//        if (current is RestoreViewController || current is BackupProgressViewController) {
-//            return
-//        }
+
         if ChatManager.onGoingChatUserJid == chatMessage.senderUserJid || (ChatManager.onGoingChatUserJid == groupId  && groupId != "") {
-            
             if !CallManager.isOngoingCall() {
                 
             }
-            
         } else {
             
             var title = "MirrorFly"
@@ -87,7 +89,6 @@ extension AppDelegate : LocalNotificationDelegate{
             if !groupId.isEmpty{
                 userId = chatMessage.senderUserJid
             }
-            //let profileDetails = ChatManager.database.rosterManager.getContact(jid: userId)
             let profileDetails = ContactManager.shared.getUserProfileDetails(for: userId)
             let userName =  FlyUtils.getUserName(jid: profileDetails?.jid ?? "0000000000", name: profileDetails?.name ?? "Fly User", nickName: profileDetails?.nickName ?? "Fly User", contactType: profileDetails?.contactType ?? .unknown)
             title = userName
@@ -107,7 +108,7 @@ extension AppDelegate : LocalNotificationDelegate{
                 }
             }
             var isCarbon = false
-            if FlyDefaults.hideNotificationContent{
+            if isHideNotificationContent{
                 let (messageCount, chatCount) = ChatManager.getUNreadMessageAndChatCount()
                 var titleContent = emptyString()
                 if chatCount == 1{
@@ -115,7 +116,7 @@ extension AppDelegate : LocalNotificationDelegate{
                 }else{
                     titleContent = "\(messageCount) messages from \(chatCount) chats"
                 }
-                title = FlyDefaults.appName + " (\(titleContent))"
+                title = (Bundle.main.displayName ?? "") + " (\(titleContent))"
                 message = "New Message"
             }else{
                 if groupId.isEmpty{
@@ -127,7 +128,7 @@ extension AppDelegate : LocalNotificationDelegate{
                 }
             }
             
-            if chatMessage.senderUserJid == FlyDefaults.myJid{
+            if chatMessage.senderUserJid == myJid {
                 isCarbon = true
             }
             if isCarbon {
@@ -143,7 +144,6 @@ extension AppDelegate : LocalNotificationDelegate{
             }
         }
     }
-    
     
 }
 
@@ -211,7 +211,7 @@ extension AppDelegate {
                 
                 self.playSound()
                 
-                if FlyDefaults.vibrationEnable {
+                if CommonDefaults.vibrationEnable {
                     AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
                 }
             }
@@ -248,11 +248,12 @@ extension AppDelegate {
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer?) {
+        
+        let myJid = try? FlyUtils.getMyJid()
+        
         UIApplication.shared.keyWindow?.rootViewController?.dismiss(animated: true)
         let current = UIApplication.shared.keyWindow?.getTopViewController()
-        //            if (current is ProfileViewController) {
-        //                return
-        //            }
+        
         if (current is MFUICallScreenViewController) {
             (current as! MFUICallScreenViewController).showCallOverlay()
         }
@@ -262,14 +263,14 @@ extension AppDelegate {
             
             print("Tap on a Notification View \(message)")
             
-            if FlyDefaults.isBlockedByAdmin {
+            if ChatManager.getContact(jid: myJid ?? "")?.isBlockedByAdmin ?? false {
                 // navigateToBlockedScreen()
             } else {
                 let messageId = message.messageId
                 if let message = FlyMessenger.getMessageOfId(messageId: messageId) {
                     pushChatId = message.chatUserJid
                     
-                    if !FlyDefaults.showAppLock {
+                    if !CommonDefaults.showAppLock {
                         pushChatId = nil
                         navigateToChatScreen(chatId: message.chatUserJid , message: message, completionHandler: {})
                     }
@@ -279,7 +280,7 @@ extension AppDelegate {
     }
     func playSound() {
         
-        if !(FlyDefaults.selectedNotificationSoundName[NotificationSoundKeys.name.rawValue]?.contains("None") ?? false) && FlyDefaults.notificationSoundEnable {
+        if !(CommonDefaults.selectedNotificationSoundName[NotificationSoundKeys.name.rawValue]?.contains("None") ?? false) && CommonDefaults.notificationSoundEnable {
             
             guard let path = Bundle.main.path(forResource: "notification-tone", ofType:"mp3") else {
                 return }
@@ -300,8 +301,9 @@ extension AppDelegate {
 
 func navigateToChatScreen(chatId : String, message : ChatMessage,completionHandler: @escaping () -> Void){
     var dismisLastViewController = false
+    let myJid = try? FlyUtils.getMyJid()
+    
     let recentChatListViewController = MFUIRecentChatListViewController()
-//        recentChatListViewController.isInitialLoading = true
     UIApplication.shared.keyWindow?.rootViewController =  UINavigationController(rootViewController: recentChatListViewController)
     UIApplication.shared.keyWindow?.makeKeyAndVisible()
     if let rootVC = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController{
@@ -311,7 +313,7 @@ func navigateToChatScreen(chatId : String, message : ChatMessage,completionHandl
         if dismisLastViewController{
             rootVC.popViewController(animated: false)
         }
-        if let profileDetails = ContactManager.shared.getUserProfileDetails(for: chatId) , (chatId) != FlyDefaults.myJid{
+        if let profileDetails = ContactManager.shared.getUserProfileDetails(for: chatId) , (chatId) != myJid {
             let vc = MFUIChatViewParentController(chatMessage: message, chatJid: chatId, messageMenItem: .reply)
             vc.showLoading(false, isContact: false)
             rootVC.removeViewController(MFUIChatViewParentController.self)
@@ -328,4 +330,9 @@ func navigateToChatScreen(chatId : String, message : ChatMessage,completionHandl
         UIApplication.shared.keyWindow?.makeKeyAndVisible()
     }
     
+}
+extension Bundle {
+    var displayName: String? {
+        return object(forInfoDictionaryKey: "CFBundleDisplayName") as? String
+    }
 }

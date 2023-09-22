@@ -34,7 +34,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         activityIndicator.isHidden = true
         self.phoneNumberTextField.delegate = self
         self.phoneNumberTextField.keyboardType = .default
-        if FlyDefaults.isLoggedIn {
+        
+        if  Utility.getBoolFromPreference(key: "isLoggedIn") {
             phoneNumberTextField.text = UserDefaults.standard.getUserID()
             phoneNumberTextField.isUserInteractionEnabled = false
             initialize()
@@ -50,8 +51,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
         
     func initialize () {
-        FlyUIKitConstants.IS_CALL_ENABLED = false
-        FlyUIKitConstants.isChatTranslate = false
+        
         if #available(iOS 13.0, *) {
             FlyUIKitSDK.shared.initialization(userID : phoneNumberTextField.text ?? "", isExport: ISEXPORT, selfObj: nil) {(isSuccess, error) in
                 self.activityIndicator.stopAnimating()
@@ -79,7 +79,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func getRecentChat() {
         FlyUIKitConstants.IS_CALL_ENABLED = false
-       
+        FlyUIKitConstants.isChatTranslate = false
         let recentChatListViewController = MFUIRecentChatListViewController()
         recentChatListViewController.isInitialLoading = true
         recentChatListViewController.showCreateOptionOf(chat: true, group: true, setting: true)
