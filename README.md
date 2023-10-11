@@ -15,6 +15,8 @@ Step 2: Returning user? Then [Login](https://console.mirrorfly.com) to your Mirr
 
 Step 3: From the MirrorFly console Overview Page you can find your unique License Key. 
 
+[Check out the demo video here](https://www.gudsho.com/gvodzredmy) (The video was made by just following the simple steps defined in this Page)
+
 ## License Key Configuration
 
 The integration process just involves the license key configuration in the AppDelegate method, that’s it.  Now you can able to build & run the demo app at ease. 
