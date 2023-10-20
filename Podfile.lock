@@ -13,7 +13,7 @@ PODS:
   - GoogleMaps/Maps (7.4.0):
     - GoogleMaps/Base
   - GoogleWebRTC (1.1.31999)
-  - IQKeyboardManagerSwift (6.5.12)
+  - IQKeyboardManagerSwift (6.5.16)
   - KissXML (5.3.1):
     - KissXML/All (= 5.3.1)
   - KissXML/Additions (5.3.1):
@@ -24,7 +24,7 @@ PODS:
   - KissXML/Core (5.3.1)
   - libidn (1.35)
   - libPhoneNumber-iOS (0.9.15)
-  - MirrorFlySDK (5.11.7):
+  - MirrorFlySDK (5.13.0):
     - Alamofire (= 5.5.0)
     - CocoaLumberjack (= 3.6.2)
     - GoogleWebRTC (= 1.1.31999)
@@ -34,14 +34,14 @@ PODS:
     - SocketRocket (= 0.6.0)
     - Starscream (= 4.0.4)
     - XMPPFramework/Swift (= 4.0.0)
-  - MirrorflyUIKit (3.0.5):
+  - MirrorflyUIKit (3.0.6):
     - Alamofire
     - Floaty (~> 4.2.0)
     - GoogleMaps
     - GoogleWebRTC
     - IQKeyboardManagerSwift
     - libPhoneNumber-iOS
-    - MirrorFlySDK (= 5.11.7)
+    - MirrorFlySDK (= 5.13.0)
     - NicoProgress
     - RealmSwift (= 10.20.1)
     - SDWebImage
@@ -57,9 +57,9 @@ PODS:
   - Realm/Headers (10.20.1)
   - RealmSwift (10.20.1):
     - Realm (= 10.20.1)
-  - SDWebImage (5.18.2):
-    - SDWebImage/Core (= 5.18.2)
-  - SDWebImage/Core (5.18.2)
+  - SDWebImage (5.18.3):
+    - SDWebImage/Core (= 5.18.3)
+  - SDWebImage/Core (5.18.3)
   - Socket.IO-Client-Swift (16.0.1):
     - Starscream (~> 4.0)
   - SocketRocket (0.6.0)
@@ -76,7 +76,7 @@ PODS:
     - XMPPFramework/default
 
 DEPENDENCIES:
-  - MirrorflyUIKit (= 3.0.5)
+  - MirrorflyUIKit (= 3.0.6)
 
 SPEC REPOS:
   trunk:
@@ -110,16 +110,16 @@ SPEC CHECKSUMS:
   Floaty: e2bd5a0f6f7f70899e26ff2da31081c8bee8d1b0
   GoogleMaps: 032f676450ba0779bd8ce16840690915f84e57ac
   GoogleWebRTC: b39a78c4f5cc6b0323415b9233db03a2faa7b0f0
-  IQKeyboardManagerSwift: 371b08cb39664fb56030f5345c815a4ffc74bbc0
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
   KissXML: 5c8e0f2e8b9f071d3e1ae123dec3eb5da615c10c
   libidn: e4576a956b797c584c77aaedfc6e3dd639b61bdc
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
-  MirrorFlySDK: 3ce89e54e07f272c3c2497b511d60e48465a8ca9
-  MirrorflyUIKit: 754131c0136c3a24dee6ee610121b19cee8e0edf
+  MirrorFlySDK: 322e61406a166b676fad9e96cb75dc9c17d7cded
+  MirrorflyUIKit: 2bc32e4a5feef191cf551196b7fdd5a1714502ba
   NicoProgress: 8e26d401623a1ba9456748b04b30183d5e212d25
   Realm: fac5ecd031fcb81171627b74944c885662d4b266
   RealmSwift: 9b02d25acb46a14756bde9893abb99e2e3675923
-  SDWebImage: c0de394d7cf7f9838aed1fd6bb6037654a4572e4
+  SDWebImage: 96e0c18ef14010b7485210e92fac888587ebb958
   Socket.IO-Client-Swift: c116d6dc9fd6be9c259bacfe143f8725bce7d79e
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
@@ -127,6 +127,6 @@ SPEC CHECKSUMS:
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
   XMPPFramework: 5d31ff9f73dce031b24bc49bcf88093627a3a86e
 
-PODFILE CHECKSUM: 0ad8e41ebcc8717a33aec8cd156a59f239be578f
+PODFILE CHECKSUM: ec2c67f07f72b3f7e7aafd3f4d7fcafb989e0dcf
 
 COCOAPODS: 1.12.0

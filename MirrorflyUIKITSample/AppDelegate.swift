@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FlyUIKitConstants.hideNotificationContent = false
         ChatManager.hideNotificationContent(hide: FlyUIKitConstants.hideNotificationContent)
 
-        
+        FlyUtils.setAppName(appName: Bundle.main.displayName ?? "NEWUIKit")
         FlyUIKitSDK.shared.didLogout {
             print("#logout didLogout")
             if #available(iOS 13.0, *) {
