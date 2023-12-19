@@ -1,0 +1,22 @@
+${PODS_ROOT}/Target Support Files/Pods-MirrorflyUIKITSample/Pods-MirrorflyUIKITSample-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework
+${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework
+${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework
+${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
+${BUILT_PRODUCTS_DIR}/KissXML/KissXML.framework
+${BUILT_PRODUCTS_DIR}/NicoProgress/NicoProgress.framework
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
+${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework
+${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework
+${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework
+${BUILT_PRODUCTS_DIR}/SwiftLinkPreview/SwiftLinkPreview.framework
+${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework
+${BUILT_PRODUCTS_DIR}/XMPPFramework/XMPPFramework.framework
+${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework
+${BUILT_PRODUCTS_DIR}/libidn/libidn.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/MirrorFlySDK/MirrorFlySDK.framework/MirrorFlySDK
+${PODS_XCFRAMEWORKS_BUILD_DIR}/MirrorflyUIKit/FlyUIKit.framework/FlyUIKit

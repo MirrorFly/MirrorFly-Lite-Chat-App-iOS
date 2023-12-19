@@ -1,0 +1,11 @@
+framework module FlyUIKit {
+  umbrella header "FlyUIKit.h"
+
+  export *
+  module * { export * }
+}
+
+module FlyUIKit.Swift {
+  header "FlyUIKit-Swift.h"
+  requires objc
+}

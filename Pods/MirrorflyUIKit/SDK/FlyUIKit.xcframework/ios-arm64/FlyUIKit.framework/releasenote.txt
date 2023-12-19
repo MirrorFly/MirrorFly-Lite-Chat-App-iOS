@@ -1,0 +1,9 @@
+
+Bugs to verify
+https://ctproduct.atlassian.net/browse/NUKS-2683
+https://ctproduct.atlassian.net/browse/NUKS-2801
+https://ctproduct.atlassian.net/browse/NUKS-2728
+
+#BUILD_NO# 1.0(415)
+#BUILD_DATE# Jul 20, 2023
+
